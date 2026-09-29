@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Natnael Tassew - Portfolio</title>
     <!-- Use the Inter font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
@@ -16,7 +16,6 @@
         }
 
         :root {
-            /* Define a clean, professional color palette */
             --color-primary: #1e3a8a; /* Deep Blue */
             --color-secondary: #3b82f6; /* Bright Blue Accent */
             --color-background: #f8fafc; /* Light Gray/Off-White */
@@ -134,7 +133,6 @@
             width: 100%;
         }
 
-        /* Mobile Menu Button (Hamburger) */
         .menu-button {
             display: none;
             cursor: pointer;
@@ -156,11 +154,10 @@
             transition: all 0.3s linear;
         }
 
-        /* Mobile Navigation Overlay */
         @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
-                top: 60px; /* Below header */
+                top: 60px;
                 left: 0;
                 width: 100%;
                 height: 0;
@@ -172,7 +169,7 @@
             }
 
             .nav-links.open {
-                height: auto; /* Will be set via JS for smooth transition */
+                height: auto;
                 padding-bottom: 1rem;
             }
             
@@ -186,13 +183,13 @@
             }
         }
 
-        /* --- Section Styling --- */
+        /* --- Sections --- */
         section {
             padding: 4rem 0;
             min-height: 80vh;
         }
 
-        /* --- Hero Section (Page 1) --- */
+        /* Hero */
         #hero {
             display: flex;
             align-items: center;
@@ -241,7 +238,6 @@
             justify-content: center;
         }
         
-        /* Mobile specific adjustments for Hero */
         @media (max-width: 640px) {
             .hero-content h1 {
                 font-size: 2.5rem;
@@ -255,7 +251,7 @@
             }
         }
 
-        /* --- About Me Section (Page 2) --- */
+        /* About Me */
         #about-me .content-flex {
             display: flex;
             flex-direction: column;
@@ -277,7 +273,7 @@
             margin-bottom: 0.5rem;
         }
 
-        /* --- Achievements Section (Page 3) --- */
+        /* Achievements */
         #achievements .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -332,7 +328,7 @@
             text-decoration: underline;
         }
 
-        /* --- Projects Section (Page 4) --- */
+        /* Projects */
         .project-item {
             display: flex;
             flex-direction: column;
@@ -344,13 +340,12 @@
         }
         
         .project-item:nth-child(even) {
-            background-color: #f0f4f8; /* Slightly different background for visual separation */
+            background-color: #f0f4f8;
         }
 
-        /* Updated Project Image Styling */
         .project-image {
-            width: 50%;
-            height: 180px;
+            width: 100%;
+            height: 220px;
             object-fit: cover;
             display: block;
             background-color: var(--color-light-gray);
@@ -381,14 +376,13 @@
             margin-top: 1rem;
         }
         
-        /* Desktop/Tablet - Side by Side Layout */
         @media (min-width: 768px) {
             .project-item {
                 flex-direction: row;
             }
             
             .project-item:nth-child(even) {
-                flex-direction: row-reverse; /* Swap image and details for alternating design */
+                flex-direction: row-reverse;
             }
 
             .project-image,
@@ -396,15 +390,13 @@
                 flex: 1;
             }
             
-            /* Make image full height in flex container */
             .project-image {
                 height: auto; 
                 min-height: 300px;
             }
         }
 
-
-        /* --- Skills Section (Page 5) --- */
+        /* Skills */
         #skills .skill-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -435,7 +427,7 @@
         }
         
         .skill-list li {
-            background-color: #e0f2fe; /* Light blue background */
+            background-color: #e0f2fe;
             color: var(--color-primary);
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
@@ -448,8 +440,7 @@
             background-color: #bae6fd;
         }
 
-
-        /* --- Contact Section (Page 6) --- */
+        /* Contact */
         #contact .contact-grid {
             display: flex;
             flex-wrap: wrap;
@@ -488,7 +479,7 @@
             text-decoration: underline;
         }
 
-        /* --- Footer --- */
+        /* Footer */
         footer {
             background-color: var(--color-primary);
             color: white;
@@ -522,22 +513,20 @@
         <!-- Page 1: Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <!-- IMPORTANT: Save  photo as 'my-photo.jpg' in the same folder -->
                 <img src="my-photo.jpg" 
-                     alt="Professional profile photo of natnael tassew" 
+                     alt="Professional profile photo of Natnael Tassew" 
                      class="profile-photo">
 
                 <h1>Hi, I’m Natnael Tassew</h1>
-                <p>Aspiring Computer Science Student</p>
-                <p></p>
+                <p>Aspiring Computer Science & AI Student</p>
 
-                <!-- Short introduction -->
                 <p style="margin-top: 2rem; max-width: 600px; font-size: 1.1rem; color: #4b5563;">
-                    I am a dedicated student with a passion for algorithms and problem-solving, aiming to leverage Turkiye academic excellence in Computer Science. My goal is to build intelligent systems that address complex global challenges.
+                    I am a dedicated student with a passion for algorithms, RAG AI systems, and software engineering. My goal is to leverage top-tier global academic opportunities in Computer Science to build intelligent digital solutions that address real-world challenges.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#projects" class="button button-primary">View My Projects</a>
+                    <a href="#achievements" class="button button-secondary">View Achievements</a>
                 </div>
             </div>
         </section>
@@ -547,27 +536,22 @@
             <h2>About Me</h2>
             <div class="content-flex">
                 <div class="goal-card">
-                <p>
-                    My name is Natnael Tassew, and I am a 19-year-old Grade 12 student at Abyot Kirs Secondary School in Addis Ababa, Ethiopia. I was born in Bahir Dar and grew up with two brothers. From a young age, I developed a strong interest in technology. My mother introduced me to fixing simple devices such as chargers, sockets, and phones, and later taught me how to use a computer. That moment sparked my passion for technology and motivated me to learn more.
-
-                    As I grew older, I actively participated in ICT activities at school and continued exploring the field during my free time. At the age of 12, I began learning fundamental computer skills, and over the years I expanded my knowledge into areas such as Python programming, Windows and Linux systems, HTML, CSS, and basic cybersecurity. My favourite subjects in school are Information Technology and Mathematics.
-
-                    I enjoy using my free time to learn new skills, which has helped me earn several certificates. These include three certificates in IT, AI Fundamentals, and Programming Fundamentals from Udacity, an advanced Python programming certificate from FreeCodeCamp, a theology certificate from the Ethiopian Orthodox Church, and a Grade 9 academic excellence certificate for ranking 3rd in my class.
-                </p>
-                </div>
-                <div class="goal-card">
-                    <h3>Why I Want to Study in Turkiye</h3>
-                    <!--  -->
                     <p>
-                        The Turkiye Federation's history of pioneering achievements in theoretical computer science and mathematics is unparalleled. Institutions like Middle East Technical University (METU/ODTU)  offer a depth of curriculum, particularly in fields like computer science and numerical methods, that perfectly aligns with my specialized interests. I seek an environment where academic rigor is the standard, allowing me to engage with world-class faculty and a diverse, driven peer group.
+                        My name is Natnael Tassew, and I am a 19-year-old student from Addis Ababa, Ethiopia. I completed my Grade 12 education at Abyot Kirs Secondary School, scoring 415/600 on the national exam. From a young age, I developed a deep curiosity for technology, starting with fixing basic household electronics and expanding into computer science, Linux systems, Python programming, and AI.
                     </p>
                 </div>
 
                 <div class="goal-card">
-                    <h3>My Academic Goals</h3>
-                    <!--  -->
+                    <h3>Why I Want to Study Abroad</h3>
                     <p>
-                        My primary goal is to specialize in Quantum computing in PHD. I plan to building a computer science projects. Beyond graduation, I aim to contribute to a multinational research team, using my skills to develop sustainable technological solutions, thereby fostering stronger international scientific collaboration.
+                        Leading global academic institutions offer unprecedented opportunities in computer science, software engineering, and artificial intelligence. I seek an environment defined by high academic rigor where I can learn from world-class faculty, access advanced research facilities, and collaborate with a diverse, globally-driven peer group.
+                    </p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>My Academic & Career Goals</h3>
+                    <p>
+                        My long-term goal is to become an expert Software and AI Developer who builds digital platforms solving critical social problems. Beyond graduation, I plan to contribute to digital transformation initiatives in Ethiopia and mentor aspiring students who lack educational resources.
                     </p>
                 </div>
             </div>
@@ -579,50 +563,73 @@
             <div class="grid-container">
                 
                 <div class="achievement-card">
+                    <h3>CS50x: Introduction to Computer Science</h3>
+                    <small>Harvard University — 2026</small>
+                    <p>Completed 10 comprehensive problem sets and a final project, mastering core computer science principles, C, Python, algorithms, and computational thinking.</p>
+                    <a href="https://cs50.harvard.edu/certificates/243882fl-2c69-49aa-92d7-8a4d55058fc6" target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Open Doors International Olympiad Diploma</h3>
+                    <small>Global Universities Association — April 28, 2026</small>
+                    <p>Awarded High Achievement Diploma (№ 2025-BT-COM-H133) in Computer and Data Science track for the Bachelor's degree program.</p>
+                    <a href="open door.pdf" target="_blank" class="cert-link">View Diploma →</a>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Artificial Intelligence Fundamentals</h3>
+                    <small>IBM SkillsBuild — August 14, 2026</small>
+                    <p>Verified credential demonstrating professional excellence in AI fundamentals, machine learning concepts, and practical applications.</p>
+                    <a href="https://www.credly.com/badges/34ebe303-8c6d-47d5-81de-9e5ddc188e5f" target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Ethical Hacker Certification</h3>
+                    <small>Cisco Networking Academy — August 2, 2026</small>
+                    <p>Successfully completed Ethical Hacker certification offered through Africa Agility Foundation (Cert ID: b402c4ac-995c-4012-a20d-fbbc7b303453).</p>
+                    <a href="Ethical_Hacker_certificate cisco.pdf" target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="achievement-card">
                     <h3>AI Fundamentals Nanodegree</h3>
-                    <small>Date: November 2025</small>
-                    <p>Verified Nanodegree by Udacity (Accenture). Gained foundational knowledge in AI and machine learning practical applications.</p>
+                    <small>Udacity (Accenture) — November 2025</small>
+                    <p>Verified Nanodegree covering practical machine learning concepts and foundational artificial intelligence tools.</p>
                     <a href="https://www.udacity.com/certificate/e/87f4894a-b5b2-11f0-8f4c-4f6e0a119fc7" target="_blank" class="cert-link">View Certificate →</a>
                 </div>
 
                 <div class="achievement-card">
                     <h3>Programming Fundamentals Nanodegree</h3>
-                    <small>Date: December 2024</small>
-                    <p>Verified Nanodegree by Udacity (Accenture). Mastered core programming concepts, including data structures and algorithms.</p>
+                    <small>Udacity (Accenture) — December 2024</small>
+                    <p>Mastered foundational programming concepts, algorithm development, and data structures.</p>
                     <a href="https://www.udacity.com/certificate/e/e6a98e78-6c1a-11ef-af14-f79a07bd6e4f" target="_blank" class="cert-link">View Certificate →</a>
                 </div>
 
                 <div class="achievement-card">
                     <h3>Scientific Computing with Python</h3>
-                    <small>Date: Verified Certification</small>
-                    <p>Awarded by FreeCodeCamp for completing 300 hours of coursework, including 5 complex algorithms projects in Python.</p>
+                    <small>freeCodeCamp</small>
+                    <p>Completed 300 hours of coursework, developing 5 complex algorithmic Python programs.</p>
                     <a href="https://www.freecodecamp.org/certification/natnaelman09/scientific-computing-with-python-v7" target="_blank" class="cert-link">View Certificate →</a>
                 </div>
 
                 <div class="achievement-card">
+                    <h3>Effective Leadership</h3>
+                    <small>HP LIFE / LIFE Global — February 2026</small>
+                    <p>Learned leadership strategies, ethics in management, and strategies for effective team collaboration.</p>
+                    <a href="https://www.life-global.org/certificate/932c3cc0-a13e-4dba-83fd-c0ba055aa449" target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="achievement-card">
                     <h3>Theology Certificate</h3>
-                    <small>Date: October 2025</small>
-                    <p>Completed a comprehensive two-year curriculum (Oct 2023 - Oct 2025) at the Ethiopian Orthodox Tewahedo Church, demonstrating long-term dedication and discipline.</p>
+                    <small>Ethiopian Orthodox Tewahedo Church — October 2025</small>
+                    <p>Completed a 2-year curriculum (Oct 2023 - Oct 2025) emphasizing moral values, discipline, and community service.</p>
                     <a href="theology-certificate.jpg" target="_blank" class="cert-link">View Certificate →</a>
                 </div>
 
                 <div class="achievement-card">
                     <h3>Grade 9 Academic Excellence</h3>
-                    <small>Date: July 2023</small>
-                    <p>Awarded 3rd Rank for outstanding academic performance at Fana 02 Secondary School, Addis Ababa.</p>
+                    <small>Fana 02 Secondary School — July 2023</small>
+                    <p>Awarded 3rd Rank in class for academic excellence.</p>
                     <a href="high-school-certificate.jpg" target="_blank" class="cert-link">View Certificate →</a>
-                </div>
-                <div class="achievement-card">
-                    <h3>introduction to promote engineering</h3>
-                    <small>Date: Jan 2026</small>
-                    <p>completed Microsoft and simple learn provided by these company online course</p>
-                    <a href="high.pdf" target="_blank" class="cert-link">View Certificate →</a>
-                </div>
-                <div class="achievement-card">
-                    <h3>Effective Leadership</h3>
-                    <small>Date: Feb 2026</small>
-                    <p> effective leadership and its importance, how to successfully leverage different leadership strategies, and why ethics plays a role in effective leadership</p>
-                    <a href="https://www.life-global.org/certificate/932c3cc0-a13e-4dba-83fd-c0ba055aa449" target="_blank" class="cert-link">View Certificate →</a>
                 </div>
                 
             </div>
@@ -630,83 +637,46 @@
 
         <!-- Page 4: Projects -->
         <section id="projects" class="container">
-            <h2>My Projects</h2>
+            <h2>Featured Projects</h2>
             
+            <!-- Project 1 -->
             <div class="project-item">
-                <!-- IMPORTANT: Save photo as 'project-1.jpg' -->
-                <img src="project-1.jpg" alt="Probability Calculator Screenshot" class="project-image">
+                <img src="project-1.jpg" alt="Digital School Management System Screenshot" class="project-image">
                 <div class="project-details">
-                    <h3>Probability Calculator</h3>
-                    <p>A Python program that estimates probabilities by running a large number of simulated experiments. It determines the likelihood of drawing specific balls from a hat.</p>
+                    <h3>Digital School Management System</h3>
+                    <p>
+                        A full-stack web application designed for Abyot Kirs Secondary School to replace paper-based grade management. It allows teachers and students to view, calculate, and manage academic performance digitally, saving time and reducing errors.
+                    </p>
                     <div class="tech-tags">
-                        <span>Python</span>
-                        <span>Object Oriented Programming</span>
-                        <span>Probability</span>
+                        <span>Web Development</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Vercel Hosting</span>
                     </div>
-                    <a href="https://github.com/NatnaelTassew16/Probability-calculator-" target="_blank" class="button button-secondary project-link">View on GitHub</a>
+                    <a href="https://abyot-kirs-secondary-school.vercel.app/" target="_blank" class="button button-primary project-link">Live Demo →</a>
                 </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="project-item">
-                <!-- IMPORTANT: Save photo as 'project-2.jpg' -->
-                <img src="project-2.jpg" alt="Polygon Area Calculator Screenshot" class="project-image">
+                <img src="project-2.jpg" alt="Open Doors RAG Telegram Bot Screenshot" class="project-image">
                 <div class="project-details">
-                    <h3>Polygon Area Calculator</h3>
-                    <p>An object-oriented Python program that defines Rectangle and Square classes. It allows users to calculate area, perimeter, and the number of times one shape fits inside another.</p>
+                    <h3>Open Doors RAG AI Telegram Bot</h3>
+                    <p>
+                        A Python Retrieval-Augmented Generation (RAG) Telegram bot built from scratch without frameworks like LangChain. Uses PDF parsing, structure-aware chunking, Sentence Transformers embeddings, FAISS vector search, reranking, and NVIDIA NIM LLM API to answer applicant queries accurately.
+                    </p>
                     <div class="tech-tags">
                         <span>Python</span>
-                        <span>Inheritance</span>
-                        <span>Geometry Logic</span>
+                        <span>RAG</span>
+                        <span>FAISS</span>
+                        <span>Sentence Transformers</span>
+                        <span>NVIDIA NIM API</span>
+                        <span>Telegram Bot API</span>
                     </div>
-                    <a href="https://github.com/NatnaelTassew16/Polygon-calculator-" target="_blank" class="button button-secondary project-link">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-item">
-                <!-- IMPORTANT: Save photo as 'project-3.jpg' -->
-                <img src="project-3.jpg" alt="Budget App Screenshot" class="project-image">
-                <div class="project-details">
-                    <h3>Budget App</h3>
-                    <p>A class-based budget management system. It handles deposits, withdrawals, and category balances, and prints a formatted spend chart showing percentage spent by category.</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>Data Structures</span>
-                        <span>String Formatting</span>
-                    </div>
-                    <a href="https://github.com/NatnaelTassew16/Budget-app" target="_blank" class="button button-secondary project-link">View on GitHub</a>
+                    <a href="https://github.com/NatnaelTassew16/Open-Doors-RAG-Telegram-Bot" target="_blank" class="button button-secondary project-link">View Source Code on GitHub →</a>
                 </div>
             </div>
 
-            <div class="project-item">
-                <!-- IMPORTANT: Save photo as 'project-4.jpg' -->
-                <img src="project-4.jpg" alt="Time Calculator Screenshot" class="project-image">
-                <div class="project-details">
-                    <h3>Time Calculator</h3>
-                    <p>A smart time addition tool. It takes a start time and a duration, accurately calculating the resulting time, day of the week, and number of days passed.</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>Time Logic</span>
-                        <span>Algorithms</span>
-                    </div>
-                    <a href="https://github.com/NatnaelTassew16/Time_calculator" target="_blank" class="button button-secondary project-link">View on GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <!-- IMPORTANT: Save photo as 'project-5.jpg' -->
-                <img src="project-5.jpg" alt="Arithmetic Formatter Screenshot" class="project-image">
-                <div class="project-details">
-                    <h3>Arithmetic Formatter</h3>
-                    <p>A console application that arranges arithmetic problems vertically (like primary school math). It dynamically parses strings and handles error checking for invalid inputs.</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>String Parsing</span>
-                        <span>Error Handling</span>
-                    </div>
-                    <a href="https://github.com/NatnaelTassew16/Arithmetic-formatter" target="_blank" class="button button-secondary project-link">View on GitHub</a>
-                </div>
-            </div>
-            
         </section>
 
         <!-- Page 5: Skills -->
@@ -716,23 +686,24 @@
                 <div class="skill-group">
                     <h3>Technical Skills</h3>
                     <ul class="skill-list">
-                        <li>Python (Intermediate)</li>
-                        
-                        <li>HTML5/CSS3</li>
-                        <li>Git / GitHub</li>
-                        <li>Linux CLI</li>
+                        <li>Python Programming</li>
+                        <li>RAG & Vector Search (FAISS)</li>
+                        <li>Linux CLI & Bash</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>Git & GitHub</li>
+                        <li>Ethical Hacking & Cybersecurity</li>
                         <li>VS Code</li>
                     </ul>
                 </div>
                 <div class="skill-group">
                     <h3>Soft Skills</h3>
                     <ul class="skill-list">
-                        <li>Cross-Cultural Teamwork</li>
                         <li>Complex Problem Solving</li>
-                        <li>Analytical Thinking</li>
+                        <li>Analytical & Logical Thinking</li>
                         <li>Time Management</li>
                         <li>Technical Writing</li>
                         <li>Mentorship & Teaching</li>
+                        <li>Cross-Cultural Communication</li>
                     </ul>
                 </div>
             </div>
@@ -741,7 +712,7 @@
         <!-- Page 6: Contact -->
         <section id="contact" class="container">
             <h2>Get In Touch</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">I am available and eager to discuss my application and future goals.</p>
+            <p style="text-align: center; margin-bottom: 2rem;">I am available and eager to discuss my applications, projects, and future goals.</p>
             <div class="contact-grid">
                 
                 <div class="contact-card">
@@ -759,30 +730,25 @@
                     <a href="https://github.com/NatnaelTassew16" target="_blank">github.com/NatnaelTassew16</a>
                 </div>
                 
-                
-                
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            &copy; 2026 Natnael Tassew. portfolio
+            &copy; 2026 Natnael Tassew. Portfolio
         </div>
     </footer>
 
     <script>
-        // JavaScript for smooth scrolling and responsive menu handling
         document.addEventListener('DOMContentLoaded', () => {
             const menuButton = document.getElementById('menuButton');
             const navLinks = document.getElementById('navLinks');
             const header = document.querySelector('header');
-            const navHeight = header.offsetHeight; // Get height of sticky header
+            const navHeight = header.offsetHeight;
 
-            // 1. Mobile Menu Toggle
             menuButton.addEventListener('click', () => {
                 const isOpen = navLinks.classList.toggle('open');
-                // Calculate and set the height dynamically for smooth slide transition
                 if (isOpen) {
                     navLinks.style.height = navLinks.scrollHeight + "px";
                 } else {
@@ -790,7 +756,6 @@
                 }
             });
 
-            // 2. Smooth Scrolling for Navigation Links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -799,20 +764,11 @@
                     const targetElement = document.querySelector(targetId);
 
                     if (targetElement) {
-                        // Close the mobile menu if open
                         if (navLinks.classList.contains('open')) {
                             navLinks.classList.remove('open');
                             navLinks.style.height = "0";
                         }
 
-                        // Use scrollIntoView with smooth behavior (modern way)
-                        // Fallback: manually calculate and scroll for sticky header compensation
-                        if (typeof targetElement.scrollIntoView === 'function' && targetElement.scrollIntoView({ behavior: 'smooth' }) === undefined) {
-                            // If smooth scroll is supported, rely on that.
-                            return;
-                        }
-
-                        // Manual scroll calculation for older browsers or if preferred
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.scrollY - navHeight;
 
@@ -824,12 +780,10 @@
                 });
             });
 
-            // Set initial height of mobile menu to 0
             if (window.innerWidth <= 768) {
                  navLinks.style.height = "0";
             }
         });
     </script>
 </body>
-
 </html>
